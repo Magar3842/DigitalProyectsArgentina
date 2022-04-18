@@ -1,0 +1,163 @@
+/*iphone 12pro*/
+
+@media screen and (max-width:480px) {
+    .nav__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .main__img {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 10vw;
+        font-weight: 25px;
+        color: #FFF;
+        font-family: fantasy;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px whitesmoke;
+    }
+
+    .copy {
+        font-size: 10vw;
+        font-weight: 25px;
+        margin: 0px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: aqua;
+    }
+
+    .container__main {
+        height: 100%;
+    }
+
+    .container-card {
+        overflow-y: hidden;
+    }
+
+    .card {
+        display: grid;
+        grid-template-rows: 4fr auto;
+        grid-template-columns: 1fr auto;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .card__img {
+        width: 100%;
+        align-items: left;
+        justify-content: space-around;
+        overflow-y: hidden;
+        padding: 20px;
+    }
+
+    .card__text {
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: 100%;
+        box-shadow: 5px 8px 12px black;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
+
+/*ipad mini*/
+
+@media screen and (max-width:1024px) {
+    .nav__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+
+    .container__main {
+        width: 100%;
+    }
+
+    .container-card {
+        overflow-y: hidden;
+    }
+
+    .card {
+        display: grid;
+        grid-template-rows: 4fr auto;
+        grid-template-columns: 1fr auto;
+        grid-auto-flow: row;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .card__img {
+        object-fit: cover;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: space-between;
+        overflow-y: hidden;
+    }
+
+    .card__text {
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .title {
+        font-size: 3vw;
+        font-weight: 100;
+        color: #FFF;
+        font-family: fantasy;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-shadow: 0 0 8px whitesmoke;
+    }
+
+    .copy {
+        font-size: 3vw;
+        margin: 25px;
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        color: aqua;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: 100%;
+        box-shadow: 5px 8px 12px black;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/*pagina acceso a clientes*/
+/* Responsive layout - when the screen is less than 1024px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1024px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
