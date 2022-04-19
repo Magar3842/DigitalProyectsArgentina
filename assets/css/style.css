@@ -24,6 +24,18 @@ body {
 
 .logo__img {
     width: 100%;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-timing-function:ease;
+}
+
+@keyframes mover {
+    0% {
+        transform: scale(0%);}
+    100% {
+        transform: scale(100%);}
 }
 
 .link {
@@ -39,8 +51,8 @@ body {
     text-decoration: none;
     margin-right: 1rem;
     text-transform: uppercase;
-    animation:backwards;
-    }
+    animation: backwards;
+}
 
 .socialmedia {
     display: inline-block;
@@ -72,7 +84,7 @@ body {
     padding-left: 70px;
     -webkit-transition: .6s ease-out;
     transition: .6s ease-out;
-    border-style:groove;   
+    border-style: groove;
 }
 
 #search:active,
@@ -169,24 +181,29 @@ body {
 
 .services {
     background-image: radial-gradient(circle 400px at 6.8% 8.3%, rgba(255, 244, 169, 1) 0%, rgba(255, 244, 234, 1) 100.2%);
-}
+    width: 100%;
+  }
 
 .services--modified {
     background-image: radial-gradient(circle 400px at 6.8% 8.3%, rgba(255, 244, 169, 1) 0%, rgba(255, 244, 234, 1) 100.2%);
     padding: 30px;
+    
 }
 
 .subtitle {
     font-size: 32px;
     text-align: center;
     padding-top: 20px;
-        }
+}
 
 .subtitle--modifier {
     text-align: center;
     margin-bottom: 16px;
-}
+    }
 
+.subtitle--modifier__ul {
+    text-decoration: none;
+}    
 .copy__section {
     color: black;
     font-size: 22px;
@@ -234,7 +251,7 @@ body {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family:cursive;
+    font-family: cursive;
     color: orangered;
 }
 
@@ -339,7 +356,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    
+
 }
 
 .information__links-img {
@@ -366,21 +383,23 @@ body {
 }
 
 /*formulario contacto pagina acceso a clientes*/
-  
- input[type=text], select, textarea {
+
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-  }
-  
-  label {
+}
+
+label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
@@ -388,27 +407,27 @@ body {
     border-radius: 4px;
     cursor: pointer;
     float: right;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-   .col-25 {
+}
+
+.col-25 {
     float: left;
     width: 25%;
     margin-top: 6px;
-  }
-  
-  .col-75 {
+}
+
+.col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+/* Clear floats after the columns */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
