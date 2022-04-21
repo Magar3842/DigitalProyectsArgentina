@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
 </head>
@@ -23,7 +26,7 @@
                     <img src="../img/logoDPA.png" class="logo__img">
                 </div>
                 <div class="link">
-                    <a href="/index.html">Inicio</a>
+                    <a href="../../index.html">Inicio</a>
                     <a href="./Empresa.html">Empresa</a>
                     <a href="./Servicios.html">Servicios</a>
                     <a href="./Contacto.html">Contacto</a>
@@ -50,43 +53,47 @@
     <section>
         <h1>Contacto!</h1>
         <h2>Contactanos Ahora</h2>
-        <div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.582586994428!2d-58.398228284591504!3d-34.6147151655874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae712997ec7%3A0xab9aeafd81db846d!2sRinc%C3%B3n%20452%2C%20C1081%20ABJ%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1647871269472!5m2!1ses-419!2sar"
-                style="border:0;" allowfullscreen="" loading="lazy" height="300px" width="100%"></iframe>
+        <div id="local">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.582586994428!2d-58.398228284591504!3d-34.6147151655874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccae712997ec7%3A0xab9aeafd81db846d!2sRinc%C3%B3n%20452%2C%20C1081%20ABJ%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1650496157132!5m2!1ses-419!2sar"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="wrapper">
+                <h2 class="text-primary md-4">Ubicados en Buenos Aires, Argentina.</h2>
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
-    <div class="container">
-        <form action="/action_page.php">
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">First Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">Subject</label>
-                </div>
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Write something.."
-                        style="height:200px"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
     </div>
     </main>
     <footer class="footer">
@@ -118,6 +125,9 @@
             <img src="../img/whatsapp (1).png">
         </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
