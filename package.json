@@ -1,0 +1,28 @@
+{
+  "name": "digital-proyect-argentina-garcia-macarena",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto GIT CODERHOUSE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magar3842/DigitalProyectsArgentina.git"
+  },
+  "author": "garcia macarena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Magar3842/DigitalProyectsArgentina/issues"
+  },
+  "homepage": "https://github.com/Magar3842/DigitalProyectsArgentina#readme",
+  "dependencies": {
+    "download": "^8.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
