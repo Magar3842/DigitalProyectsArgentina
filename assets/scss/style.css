@@ -1,1 +1,200 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo__img {
+  width: 100%;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: mover;
+          animation-name: mover;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 1rem bolder;
+  padding: 20px;
+  align-items: inherit;
+}
+.link a {
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  -webkit-animation: backwards;
+          animation: backwards;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+}
+.container .lupa {
+  position: absolute;
+  margin-left: 28px;
+  margin-top: 27px;
+  color: #FFF;
+  transition: 0.3s ease-out;
+}
+.container__main {
+  background: orange;
+}
+
+#search {
+  width: 100px;
+  height: 50px;
+  background-color: tomato;
+  color: #FFF;
+  border: black;
+  float: left;
+  padding-left: 70px;
+  transition: 0.6s ease-out;
+  border-radius: 10px;
+  border-style: ridge;
+}
+#search:active, #search:focus {
+  outline: 0;
+  width: 200px;
+  padding-right: 20px;
+}
+
+.container:hover #search {
+  background-color: #55A;
+}
+.container:hover #search lupa {
+  color: rgb(12, 58, 12);
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 8px white;
+}
+
+.copy {
+  font-size: 2rem;
+  margin: 15px;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #6B6;
+}
+
+.main__textos {
+  height: 80vh;
+  max-height: 700px;
+  background-image: url("../img/fondo pagina bueno.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__textos img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-inner {
+  max-height: 39rem;
+  transition-duration: 0.6s;
+}
+
+.about {
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  font-family: "Raleway", sans-serif;
+}
+.about h2 {
+  text-align: center;
+  padding: 20px;
+}
+.about p {
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
+.about h1 {
+  text-align: center;
+  padding: 20px;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
