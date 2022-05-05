@@ -18,12 +18,13 @@ body {
   justify-content: space-around; }
 
 .logo__img {
-  width: 100%;
+  width: 60%;
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-name: mover;
   animation-duration: 2s;
-  animation-timing-function: ease; }
+  animation-timing-function: ease;
+  padding-bottom: 10px; }
 
 @keyframes mover {
   0% {
@@ -68,32 +69,6 @@ body {
   .container__main {
     background: orange; }
 
-#search {
-  width: 100px;
-  height: 50px;
-  background-color: tomato;
-  color: white;
-  border: black;
-  float: left;
-  padding-left: 70px;
-  -webkit-transition: .6s ease-out;
-  transition: .6s ease-out;
-  border-radius: 10px;
-  border-style: ridge; }
-  #search:active, #search:focus {
-    outline: 0;
-    width: 200px;
-    padding-right: 20px; }
-
-.container:hover #search {
-  background-color: #55A; }
-  .container:hover #search lupa {
-    color: #0c3a0c; }
-  .container:hover #search::-webkit-input-placeholder {
-    color: white; }
-  .container:hover #search:-ms-input-placeholder {
-    color: white; }
-
 .title {
   font-size: 2.5rem;
   font-weight: 100;
@@ -120,7 +95,7 @@ body {
   top: 70%;
   left: 30%;
   transform: translate(-50%, -50%);
-  color: red;
+  color: #0c3a0c;
   transform: translate(-50%, -50%);
   text-shadow: 0 0 8px white; }
   @media only screen and (min-width: 390px) and (max-width: 767px) {
@@ -148,7 +123,7 @@ body {
   align-items: center; }
 
 .main__img {
-  width: 100%;
+  width: 90%;
   height: auto; }
 
 .carousel-inner {
@@ -156,8 +131,10 @@ body {
   transition-duration: .6s; }
 
 .about {
-  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
-  font-family: "Raleway", sans-serif; }
+  background-color: #c3e7e9;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  padding: 10px; }
   .about h2 {
     text-align: center;
     padding: 20px; }
@@ -166,7 +143,6 @@ body {
     font-family: "Raleway", sans-serif; }
   .about h1 {
     text-align: center;
-    padding: 20px;
     animation-duration: 1s;
     animation-name: slidein; }
 
@@ -182,10 +158,10 @@ body {
   background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
   width: 100%;
   text-align: center;
-  color: blue; }
+  color: #0c3a0c; }
 
 .container-fluid {
-  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   width: 100%;
   padding-right: 1rem;
   padding-top: 2rem; }
@@ -193,7 +169,7 @@ body {
 .card-title span {
   font-size: medium;
   font-weight: bold;
-  color: red; }
+  color: #00806f; }
 
 .img-fluid {
   max-width: 100%;
@@ -253,7 +229,7 @@ body {
     padding-top: 10px;
     padding-bottom: 1rem;
     font-family: "Times New Roman", Times, serif;
-    color: orange; }
+    color: #666; }
     @media only screen and (min-width: 390px) and (max-width: 767px) {
       .card__text {
         align-items: center; } }
@@ -266,7 +242,7 @@ body {
     border-radius: 20px; }
 
 .select {
-  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  background-color: #c3e7e9;
   height: 100vph; }
 
 .list {
@@ -274,7 +250,7 @@ body {
   .list__title {
     font-size: 30px;
     padding: 10px;
-    color: red;
+    color: #55A;
     text-shadow: #666; }
   .list__subtitle {
     padding: 10px; }
@@ -320,7 +296,7 @@ body {
   height: auto; }
 
 #local {
-  background: #6B6;
+  background: #c3e7e9;
   padding-bottom: 300px;
   display: flex;
   flex-direction: column;
@@ -340,14 +316,14 @@ body {
   flex-wrap: nowrap;
   align-content: space-between;
   justify-content: center;
-  background: salmon;
+  background: #e1e28c;
   border-radius: 10px; }
 
 #titulo-fomulario {
   color: #0c3a0c; }
 
 .b-example-divider {
-  height: 2rem;
+  height: 1rem;
   background-color: black, 0.1;
   border: solid black, 0.15;
   border-width: 1px 0;
@@ -359,7 +335,7 @@ body {
   padding: auto; }
   .footer__copy {
     width: 100%;
-    padding: auto;
+    padding: 20px;
     color: black;
     display: flex;
     flex-wrap: wrap;
@@ -367,6 +343,9 @@ body {
   .footer__title {
     font-size: 20px;
     margin-bottom: 32px; }
+
+.container__footer {
+  padding: 10px; }
 
 .information {
   display: grid;
@@ -420,7 +399,7 @@ label {
   display: inline-block; }
 
 input[type=submit] {
-  background-color: blue;
+  background-color: #55A;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -454,13 +433,14 @@ input[type=submit] {
   clear: both; }
 
 .dw-container {
-  background-color: #addaad;
+  background-color: #9999cc;
   font-family: "Raleway", sans-serif;
   text-align: justify;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto; }
   .dw-container--modified {
-    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%); }
+    background-color: #c3e7e9; }
   .dw-container--modified h2 {
     text-align: center;
     font-weight: bold; }
@@ -470,13 +450,14 @@ input[type=submit] {
     padding-left: 10px; }
 
 .dg-container {
-  background-color: #00e6c7;
+  background-color: #c3e7e9;
   font-family: "Raleway", sans-serif;
   text-align: justify;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto; }
   .dg-container--modified {
     text-align: justify;
     padding-right: 10px;
     padding-left: 10px;
-    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%); }
+    background-color: #c3e7e9; }

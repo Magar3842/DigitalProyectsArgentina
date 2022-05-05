@@ -30,25 +30,51 @@
 
 <body>
     <header class="hero">
-        <nav class="nav__hero">
-            <div class="container nav__container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid p-20">
                 <div class="logo">
                     <img src="../img/logoDPA.png" class="logo__img" alt="imagen de un colibri">
                 </div>
-                <div class="link">
-                    <a href="../../index.html" class="btn btn-primary">Inicio</a>
-                    <a href="./Empresa.html" class="btn btn-primary">Empresa</a>
-                    <a href="./Servicios.html" class="btn btn-primary">Servicios</a>
-                    <a href="./Contacto.html" class="btn btn-primary">Contacto</a>
-                    <a href="./AccesoaClientes.html" class="btn btn-primary">Acceso a clientes</a>
-                </div>
-                <div class="search-button">
-                    <div class="container">
-                        <span class="lupa">
-                            <i class='bx bx-search-alt'></i>
-                        </span>
-                        <input type="search" id="search" placeholder="¿Qué quieres buscar?" />
-                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                    href="./Servicios.html">Servicios</a>
+                            </li>
+                                <li><a class="dropdown-item"
+                                        href="./DesarrollosdeSitiosWEB.html">Desarrollo de sitios WEB</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="./DiseñograficoDigitalyEditorial.html">Diseño grafico Digital
+                                        y Editorial</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./AccesoaClientes.html">Acceso a Clientes</a>
+                  </li>
+                </ul>
+                <form class=" d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Busqueda</button>
+                                </form>
                 </div>
             </div>
         </nav>
@@ -59,29 +85,29 @@
             <h1>Desarrollo de sitios Web Profesionales a Medida</h1>
             <h2>El mundo Web 3.0 a su alcance. Soluciones en <strong>un solo lugar</strong> con <strong>amplia
                     trayectoria.</strong> Diseño web de alta calidad. Hagase conocer y venda mas que nunca antes.</h2>
-            </div>
-            <div class="dw-container--modified">
-                <h2>Mas en Digital Proyects Argentina</h2>
-                <ul>
-                    <li>Diseno Grafico Digital</li>
-                    <li>Integracion con mercadoPago</li>
-                </ul>
-                <p>Texto, imagen (estática y en movimiento), audio, tiempo y espacio. Internet no es sólo un medio mas;
-                    es interrelación de los sentidos; es evolución de sistemas; es la simbiosis de siglos de cultura y
-                    tecnología reunidas en un medio, “es el medio de comunicación por excelencia de este siglo”, que
-                    origina una nueva necesidad: formar parte de ella, estar presente en este nuevo universo en donde
-                    los sentidos no se difieren, se reúnen para crear una nueva experiencia, una nueva pantalla en donde
-                    todos los aspectos pertinentes se muestran al unísono. Más de 24 años de experiencia nos avalan para
-                    el desarrollo de sitios web. Nuestras soluciones son integramente "Llave en Mano". Sin necesidad de
-                    que usted tenga que aprender algo o complicarse para poder tener su sitio web.</p>
-                <p>Nuestros desarrollos son desde cero, sin utilización de administradores de contenidos realizados por
-                    terceros o código fuente reutilizable de otros trabajos. Cada cliente es un nuevo desafío.</p>
-                <p>Hacer un sitio web no es utilizar una plataforma para blogs y retocarla para que quede como un sitio
-                    web. Muchos particulares y empresas dicen que saben pero en realidad no saben, terminan utilizando
-                    plataformas prediseñadas. Lo barato le terminará costando carísimo. No se deje engañar ni improvise.
-                </p>
-                <h2>Algunas de nuestras soluciones Web</h2>
-                <ul>
+        </div>
+        <div class="dw-container--modified">
+            <h2>Mas en Digital Proyects Argentina</h2>
+            <ul>
+                <li>Diseno Grafico Digital</li>
+                <li>Integracion con mercadoPago</li>
+            </ul>
+            <p>Texto, imagen (estática y en movimiento), audio, tiempo y espacio. Internet no es sólo un medio mas;
+                es interrelación de los sentidos; es evolución de sistemas; es la simbiosis de siglos de cultura y
+                tecnología reunidas en un medio, “es el medio de comunicación por excelencia de este siglo”, que
+                origina una nueva necesidad: formar parte de ella, estar presente en este nuevo universo en donde
+                los sentidos no se difieren, se reúnen para crear una nueva experiencia, una nueva pantalla en donde
+                todos los aspectos pertinentes se muestran al unísono. Más de 24 años de experiencia nos avalan para
+                el desarrollo de sitios web. Nuestras soluciones son integramente "Llave en Mano". Sin necesidad de
+                que usted tenga que aprender algo o complicarse para poder tener su sitio web.</p>
+            <p>Nuestros desarrollos son desde cero, sin utilización de administradores de contenidos realizados por
+                terceros o código fuente reutilizable de otros trabajos. Cada cliente es un nuevo desafío.</p>
+            <p>Hacer un sitio web no es utilizar una plataforma para blogs y retocarla para que quede como un sitio
+                web. Muchos particulares y empresas dicen que saben pero en realidad no saben, terminan utilizando
+                plataformas prediseñadas. Lo barato le terminará costando carísimo. No se deje engañar ni improvise.
+            </p>
+            <h2>Algunas de nuestras soluciones Web</h2>
+            <ul>
                 <li>Desarrollo y Solución completa llave en mano (diseño+desarrollo+programación+hosting).</li>
                 <li>Tecnologías principalmente utilizadas: Linux + Apache + PHP + MySQL. HTML 5. CSS 3. jQuery®,
                     MongoDB, Angular, y Ajax.</li>
@@ -102,19 +128,19 @@
                 <li>Carga rapida del sitio.</li>
                 <li>Compatibilidad con celulares y tabletas.</li>
             </ul>
-                <h2>Modificaciones de sitios web existentes</h2>
-                <p>Realizamos modificaciones sobre cualquier sitio web existente realizador por terceros o por
-                    nosotros. Cada modificación será previamente presupuestada. En el caso de que una modificación
-                    -sin importar su complejidad- sea igual o menor a una hora de desarrollo se cotizará por una
-                    hora de trabajo. En el caso de que el trabajo lleve entre una y veinte horas de trabajo, se
-                    cotizará por hora. Por último en el caso de que el trabajo supere las veinte horas de trabajo se
-                    presupuestará a medida. No existen modificaciones gratuitas de sitio web dado que todo lleva
-                    tiempo y con cada modificación el cliente recibe un backup completo del trabajo como
-                    corresponde.</p>
-                    </div>
-                    <nav>
-                        <input type="button" value="Contactarnos" class="btn btn-primary"><a href="./Contacto.html"></a>
-                    </nav>
+            <h2>Modificaciones de sitios web existentes</h2>
+            <p>Realizamos modificaciones sobre cualquier sitio web existente realizador por terceros o por
+                nosotros. Cada modificación será previamente presupuestada. En el caso de que una modificación
+                -sin importar su complejidad- sea igual o menor a una hora de desarrollo se cotizará por una
+                hora de trabajo. En el caso de que el trabajo lleve entre una y veinte horas de trabajo, se
+                cotizará por hora. Por último en el caso de que el trabajo supere las veinte horas de trabajo se
+                presupuestará a medida. No existen modificaciones gratuitas de sitio web dado que todo lleva
+                tiempo y con cada modificación el cliente recibe un backup completo del trabajo como
+                corresponde.</p>
+        </div>
+        <nav>
+            <input type="button" value="Contactarnos" class="btn btn-primary"><a href="./Contacto.html"></a>
+        </nav>
     </main>
     <div class="b-example-divider"></div>
     <footer class="footer">

@@ -30,33 +30,59 @@
 
 <body>
     <header class="hero">
-        <nav class="nav__hero">
-            <div class="container nav__container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid p-20">
                 <div class="logo">
                     <img src="../img/logoDPA.png" class="logo__img" alt="imagen de un colibri">
                 </div>
-                <div class="link">
-                    <a href="../../index.html" class="btn btn-primary">Inicio</a>
-                    <a href="./Empresa.html" class="btn btn-primary">Empresa</a>
-                    <a href="./Servicios.html" class="btn btn-primary">Servicios</a>
-                    <a href="./Contacto.html" class="btn btn-primary">Contacto</a>
-                    <a href="./AccesoaClientes.html" class="btn btn-primary">Acceso a clientes</a>
-                </div>
-                <div class="search-button">
-                    <div class="container">
-                        <span class="lupa">
-                            <i class='bx bx-search-alt'></i>
-                        </span>
-                        <input type="search" id="search" placeholder="¿Qué quieres buscar?" />
-                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Empresa.html">Empresa</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                href="./Servicios.html">Servicios</a>
+                        </li>
+                                <li><a class="dropdown-item"
+                                        href="./DesarrollosdeSitiosWEB.html">Desarrollo de sitios WEB</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="./DiseñograficoDigitalyEditorial.html">Diseño grafico Digital
+                                        y Editorial</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./AccesoaClientes.html">Acceso a Clientes</a>
+                  </li>
+                </ul>
+                <form class=" d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Busqueda</button>
+                                </form>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <h1>Contactanos</h1>
-        <p>Ahora!!</p>
-        <div class="container" id="contenedor-formulario">
+        <h1 class="text-center">Contactanos</h1>
+        <p class="text-center">Ahora!!</p>
+        <div class="container p-20" id="contenedor-formulario">
             <div id="titulo-formulario" class="text-center mb-4">
                 <div class="mb-3">
                     <h2>WEBMAIL/CORREO WEB</h2>
